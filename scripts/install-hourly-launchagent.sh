@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-LABEL="${1:-com.local.telegram-hourly-poster}"
+LABEL="${1:-com.openclaw.telegram-group-poster}"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
 
 mkdir -p "$HOME/Library/LaunchAgents" "$ROOT/logs" "$ROOT/state"

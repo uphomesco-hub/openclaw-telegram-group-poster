@@ -1,10 +1,28 @@
 {
-  "name": "telegram-desktop-group-poster",
+  "name": "openclaw-telegram-group-poster",
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "description": "Small macOS Telegram Desktop automation for posting one message to a list of groups.",
+  "description": "OpenClaw add-on for scheduled Telegram Desktop group posting on macOS.",
+  "keywords": [
+    "openclaw",
+    "telegram",
+    "telegram-desktop",
+    "launchd",
+    "macos",
+    "automation",
+    "scheduled-posting"
+  ],
+  "homepage": "https://github.com/uphomesco-hub/openclaw-telegram-group-poster#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uphomesco-hub/openclaw-telegram-group-poster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uphomesco-hub/openclaw-telegram-group-poster/issues"
+  },
   "scripts": {
+    "check": "node --check scripts/post-to-telegram-groups.mjs && zsh -n scripts/install-hourly-launchagent.sh && zsh -n scripts/run-hourly-post.sh",
     "post:dry-run": "node scripts/post-to-telegram-groups.mjs --message property-message.txt --groups groups.txt",
     "post:draft": "node scripts/post-to-telegram-groups.mjs --message property-message.txt --groups groups.txt --draft",
     "post:send": "node scripts/post-to-telegram-groups.mjs --message property-message.txt --groups groups.txt --send"
