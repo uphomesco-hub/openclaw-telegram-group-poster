@@ -1,0 +1,9 @@
+node_modules/
+logs/
+state/
+
+# Local posting targets and message content. Copy the example files locally.
+groups.txt
+property-message.txt
+
+.DS_Store

@@ -1,0 +1,3 @@
+Write the message you want Telegram Desktop to paste and send here.
+
+You can use multiple lines. Copy this file to property-message.txt before running.

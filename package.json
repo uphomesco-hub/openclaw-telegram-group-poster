@@ -1,0 +1,15 @@
+{
+  "name": "telegram-desktop-group-poster",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Small macOS Telegram Desktop automation for posting one message to a list of groups.",
+  "scripts": {
+    "post:dry-run": "node scripts/post-to-telegram-groups.mjs --message property-message.txt --groups groups.txt",
+    "post:draft": "node scripts/post-to-telegram-groups.mjs --message property-message.txt --groups groups.txt --draft",
+    "post:send": "node scripts/post-to-telegram-groups.mjs --message property-message.txt --groups groups.txt --send"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

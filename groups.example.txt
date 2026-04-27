@@ -1,0 +1,7 @@
+# One Telegram group/channel per line.
+# Public usernames work best. Keep the @ prefix.
+# Copy this file to groups.txt before running.
+
+@example_group_one
+@example_group_two
+https://t.me/example_group_three
